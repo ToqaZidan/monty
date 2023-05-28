@@ -1,4 +1,5 @@
 #include "monty.h"
+omnibus_t omnibus = {NULL, NULL, NULL, 0};
 /**
 * main - mainfunction for monty code interpreter
 * @argc: number of arguments
