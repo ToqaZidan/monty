@@ -19,8 +19,8 @@ void mul_f(stack_t **head, unsigned int cntr)
 	if (len < 2)
 	{
 		fprintf(stderr, "L%d: can't mul, stack too short\n", cntr);
-		fclose(bus.file);
-		free(bus.content);
+		fclose(omnibus.file);
+		free(omnibus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

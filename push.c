@@ -2,7 +2,7 @@
 /**
  * push_f - function that pushs node to the stack
  * @head: stack head
- * @cntr: line number
+ * @cntr: line_number
  * Return: no return
 */
 void push_f(stack_t **head, unsigned int cntr)
@@ -30,7 +30,7 @@ void push_f(stack_t **head, unsigned int cntr)
 		free_stack(*head);
 		exit(EXIT_FAILURE); }
 	n = atoi(omnibus.arg);
-	if (omnibus.lifi == 0)
+	if (omnibus.stqu == 0)
 		add_node(head, n);
 	else
 		add_queue(head, n);

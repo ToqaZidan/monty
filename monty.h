@@ -53,21 +53,21 @@ typedef struct omnibus_s
 	char *content;
 	int stqu;
 }  omnibus_t;
-extern bus_t bus;
+extern omnibus_t omnibus;
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
-void f_push(stack_t **head, unsigned int number);
-void f_pall(stack_t **head, unsigned int number);
-void f_pint(stack_t **head, unsigned int number);
+void push_f(stack_t **head, unsigned int number);
+void pall_f(stack_t **head, unsigned int number);
+void pint_f(stack_t **head, unsigned int number);
 int execute(char *content, stack_t **head, unsigned int cntr, FILE *file);
 void free_stack(stack_t *head);
 void pop_f(stack_t **head, unsigned int cntr);
 void swap_f(stack_t **head, unsigned int cntr);
 void add_f(stack_t **head, unsigned int cntr);
 void nop_f(stack_t **head, unsigned int cntr);
-void sun_f(stack_t **head, unsigned int cntr);
+void sub_f(stack_t **head, unsigned int cntr);
 void div_f(stack_t **head, unsigned int cntr);
 void mul_f(stack_t **head, unsigned int cntr);
 void mod_f(stack_t **head, unsigned int cntr);
@@ -79,4 +79,4 @@ void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
 void queue_f(stack_t **head, unsigned int cntr);
 void stack_f(stack_t **head, unsigned int cntr);
-#endif MONTY_H
+#endif
